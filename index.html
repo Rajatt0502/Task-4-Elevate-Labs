@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Responsive Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">MySite</a>
+
+      <button class="nav-toggle" id="navToggle" aria-controls="primary-nav" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Responsive design made easy</h1>
+          <p>Build pages that look great on phones, tablets and desktops.</p>
+          <p><a class="cta" href="#">Get started</a></p>
+        </div>
+        <img src="https://via.placeholder.com/800x500" alt="Demo illustration" class="hero-img" />
+      </div>
+    </section>
+
+    <section class="features container" aria-label="Features">
+      <div class="card">
+        <h3>Fast</h3>
+        <p>Lightweight styles and images that adapt to screen size.</p>
+      </div>
+      <div class="card">
+        <h3>Accessible</h3>
+        <p>Keyboard-friendly nav and readable font sizes.</p>
+      </div>
+      <div class="card">
+        <h3>Flexible</h3>
+        <p>Grid layout that becomes a single column on small screens.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> MySite — All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
